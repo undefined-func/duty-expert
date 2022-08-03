@@ -39,7 +39,7 @@ login_manager.login_view = "login"
 @app.route('/')
 @login_required
 def home():
-    return Response("Hello World!")
+    return flask.render_template('home.html')
 
 
 LOGIN_SECTION = '/login_system' 
